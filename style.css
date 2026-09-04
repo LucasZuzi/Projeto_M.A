@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    line-height: 1.5;
+    background: #fff;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #0b2d5c;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0;
+    border-bottom: 3px solid #111;
+}
+
+header h1 {
+    font-size: clamp(28px, 4vw, 40px);
+}
+
+header p {
+    font-size: 15px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.secao {
+    padding: 55px 0;
+}
+
+.secao h2 {
+    color: #0b2d5c;
+    text-align: center;
+    font-size: clamp(24px, 3vw, 30px);
+    margin-bottom: 28px;
+}
+
+.secao p {
+    margin-bottom: 18px;
+}
+
+.descricao {
+    max-width: 750px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card,
+.formando {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.card {
+    border-top: 4px solid #0b2d5c;
+}
+
+.card h3 {
+    color: #0b2d5c;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.formandos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+}
+
+.formando {
+    text-align: center;
+    padding: 15px;
+}
+
+.foto {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border: 2px solid #0b2d5c;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    background: #e5e5e5;
+}
+
+.formando h3 {
+    color: #0b2d5c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.frase {
+    font-size: 13px;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 !important;
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.formandos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+}
+
+.formando {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+}
+
+.foto {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border: 2px solid #0b2d5c;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #e5e5e5;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formando h3 {
+    font-size: 18px;
+}
+
+.frase {
+    font-size: 13px;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 !important;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+}
+
+@media (max-width: 950px) {
+    .cards,
+    .formandos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .cards,
+    .formandos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .secao {
+        padding: 35px 0;
+    }
+
+    .foto {
+        height: 150px;
+    }
+}
+
